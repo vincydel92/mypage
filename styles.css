@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Times, serif;
+}
+
+.navbar-nav a{
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(0, 153, 34);
+}
+
+.profilo {
+  height: auto;
+}
+
+h1, h3 {
+  color: rgb(0, 153, 34);
+  padding: 10px;
+}
+
+p, h2 {
+  color: rgb(84, 84, 83);
+  padding: 8px;
+}
+
+h4 {
+  color: rgb(0, 0, 0);
+  padding: 8px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 55px;
+}
+
+.io {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  flex-direction: row;
+}
+
+.me {
+  width: 250px;
+  height: auto;
+  border-top: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+.foto {
+  width: 250px;
+  height: auto;
+  border-top: 1px solid grey;
+  padding: 20px;
+}
+
+.immagine {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dettagli {
+  width: 250px;
+  height: auto;
+  border-top: 1px solid grey;
+}
+
+.esperienza {
+  background-color: rgb(227, 241, 196);
+  height: auto;
+  padding: 10px;
+}
+
+.studi, .corso, .carriera, .costa {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.sinistra {
+  border-top: 1px solid grey;
+  width: 250px;
+}
+
+.destra {
+  border-top: 1px solid grey;
+  padding-left: 30px;
+  width: 500px;
+}
+
+.due {
+  border-top: none;
+}
+
+.competenze {
+  height: auto;
+}
+
+.lingue, .digitali {
+  text-align: center;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid grey;
+}
+
+.abilita {
+  display: flex;
+  justify-content: center;
+}
+
+.fluente, .madrelingua, .discreto, .abile, .studio {
+  padding: 25px 50px;
+  text-align: center;
+}
+
+.contatti {
+  background-color: rgb(177, 177, 177);
+  height: auto;
+}
+
+.icone {
+  padding: 30px;
+}
+
+.icone ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.icone ul li {
+  list-style: none;
+  margin: 0 15px;
+  padding: 15px;
+  display: flex;
+}
+
+.icone ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color: #000;
+}
+
+.icone ul li .fas {
+  color: #000;
+}
+
+.icone ul li .fab:hover {
+  color: #fff;
+}
+
+.icone ul li .fas:hover {
+  color: #3b5999;
+}
+
+.fas {
+  font-size: 50px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  justify-content: center;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.icone ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6%;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.icone ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.icone ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+
+.icone ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+
+.icone ul li:nth-child(3) a:hover {
+  background-color: #0077B5;
+}
+
+.icone ul li:nth-child(4) a:hover {
+  background-color: #3b5999;
+}
+
+@media only screen and (max-width: 550px) {
+  .profilo {
+    margin-top: 50px;
+  }
+
+  .io {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .studi, .corso, .carriera, .costa {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .destra {
+    border-top: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+   .destra h3, .destra h4, .hidden {
+     display: none;
+   }
+
+   .lingue, .digitali {
+     text-align: center;
+     width: auto;
+     margin-left: auto;
+     margin-right: auto;
+     border-top: 1px solid grey;
+   }
+
+  .abilita {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icone ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 930px) {
+
+  .profilo {
+    margin-top: 50px;
+  }
+
+  .lingue, .digitali {
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid grey;
+  }
+}
+
+@media only screen and (min-width: 931px) {
+
+  .testa {
+    color: rgb(0, 0, 0);
+    height: 400px;
+    background-image: url(scilla.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
